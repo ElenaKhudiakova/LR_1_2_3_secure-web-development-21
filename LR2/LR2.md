@@ -17,7 +17,6 @@
 
 ### 1. Установить PostgreSQL сервер любой версии
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 001](https://user-images.githubusercontent.com/87654857/147637198-76e4fe75-43a4-41c5-a9b9-16e66ead1e1d.png)
-
 ---
 ### 2. Создать БД lib
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 002](https://user-images.githubusercontent.com/87654857/147637232-c7a80b6c-6369-45a4-bf34-f420dc7b5047.png)
@@ -47,11 +46,12 @@
 ### 7. Войти на сайт и увидеть список книг и авторов
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 009](https://user-images.githubusercontent.com/87654857/147637349-0a67ef45-0b27-4089-b0d5-0759d5521a66.png)
 ---
+
 ### 8. Обнаружить sql инъекцию
 Введем конструкцию, которая заведомо вызовет ошибку. Например, символ «b». Получаем следующую ошибку:
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 010](https://user-images.githubusercontent.com/87654857/147637375-ed83b928-f38f-43f6-9d9a-d8c03470ecca.png)
-
 ---
+
 ### 9. Написать отчёт с описанием найденной уязвимости и примерами её эксплуатации
 
 9.1. Обход установленного фильтра 
@@ -91,6 +91,7 @@ UNION SELECT 0, column\_name, data\_type FROM information\_schema.columns WHERE 
 UNION SELECT 0, name, pass FROM public.users – 
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 015](https://user-images.githubusercontent.com/87654857/147637486-59c938f1-4fcc-43e7-830a-e76cc86d363c.png)
 ---
+
 
 ### 10. Исправить уязвимость. 10.1 В отчёте привести пример того, что уязвимости больше не эксплуатируются
 
