@@ -18,7 +18,7 @@
 ### 1. Установить PostgreSQL сервер любой версии
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 001](https://user-images.githubusercontent.com/87654857/147637198-76e4fe75-43a4-41c5-a9b9-16e66ead1e1d.png)
 
-
+---
 ### 2. Создать БД lib
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 002](https://user-images.githubusercontent.com/87654857/147637232-c7a80b6c-6369-45a4-bf34-f420dc7b5047.png)
 
