@@ -1,4 +1,4 @@
-﻿# **Лабораторная работа №3**
+# **Лабораторная работа №3**
 Цель работы: Поиск и устранение XSS уязвимостей.
 ## **Задание**
 В папке lab3 находится nodejs уязвимое приложение. Необходимо развернуть его, найти источники XSS и исправить. Модифицированное приложение загрузить в свой репозиторий GitHub.
@@ -23,9 +23,9 @@
 
 Потребовалось установить модуль «cookie-parser» для последующей работы с файлами Cookie.
 
-![](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.001.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 001](https://user-images.githubusercontent.com/87654857/147643373-088fcf71-34fe-469a-bd33-64cf65bb916d.png)
 
-*image*
+
 
 7. Войти на сайт и увидеть список книг и авторов
 7. На странице со списком книг найти 
@@ -34,21 +34,17 @@
 
 ***<img src=1 href=1 onerror=‘javascript:alert(1)’>***
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.002.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 002](https://user-images.githubusercontent.com/87654857/147643403-9eff70fb-02ed-4911-a3cd-d671d41bc4a4.png)
 
-*image*
 
 Исправление уязвимости:
 
 Для строки поиска книг можно воспользоваться prepared statement, как в ЛР2
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.003.png)
 
-*image*
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.004.png)
-
-*image*
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 003](https://user-images.githubusercontent.com/87654857/147643430-2c1bf953-1975-4436-8704-a2026498ee9d.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 004](https://user-images.githubusercontent.com/87654857/147643442-890a0974-1ff0-48a7-8a25-fa0274aef0b0.png)
 
 8.2 Persisted (Stored) XSS при создании книги и отображении списка книг
 
@@ -56,15 +52,14 @@
 
 Теперь при любом клике на сайте будет выскакивать окно:
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.005.png)
 
-*image*
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 005](https://user-images.githubusercontent.com/87654857/147643465-795ac8fb-7f67-470b-bb5c-63b8eeba7399.png)
+
 
 Команда в исходном коде:
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.006.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 006](https://user-images.githubusercontent.com/87654857/147643488-21384e19-9aa3-4a69-8fbe-a61fc55be902.png)
 
-*image*
 
 Исправление уязвимости:
 
@@ -72,9 +67,8 @@
 
 ***let bname = req.body.bookname.replace(‘<’, ‘(’).replace(‘>’, ‘)’)***
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.007.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 007](https://user-images.githubusercontent.com/87654857/147643505-7fd47b50-267e-450e-85ae-829ff0c04a12.png)
 
-*image*
 
 8.3 Потенциальную уязвимость через Cookie Injection
 
@@ -82,30 +76,22 @@
 
 Добавляем в cookie:
 
-![](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.008.png)
-
-*image*
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 008](https://user-images.githubusercontent.com/87654857/147643520-f6e3dac6-dda7-484c-a7ef-04d8f79063ff.png)
 
 Результат при обновлении страницы:
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 009](https://user-images.githubusercontent.com/87654857/147643544-9f0f7250-82fb-449f-bbd9-00cb5feb0d8c.png)
 
-![](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.009.png)
-
-*image*
 
 8.4 Некорректное создание сессионной cookie, которое приводит к захвату сессии (Session hijacking)
 
-![](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.010.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 010](https://user-images.githubusercontent.com/87654857/147643555-63a98d78-3125-4ef9-987c-741a906cd75e.png)
 
-*image*
+
 
 Исправление уязвимостей:
 
 Для уязвимостей Cookie установим флаг http-only, который запрещает любой доступ к куки из JavaScript, а также изменим значение, выводимое браузером в Value с помощью алгоритма хеширования Sha256:
 
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.011.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 011](https://user-images.githubusercontent.com/87654857/147643709-627327a1-9aa0-4684-9227-8f1da2288ade.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 012](https://user-images.githubusercontent.com/87654857/147643711-3a52dee2-bb37-4ac1-87d3-20a24ebaf2c6.png)
 
-*image*
-
-![image](Aspose.Words.9caaed46-bbb4-4406-80f1-5db4046c8311.012.png)
-
-*image*
