@@ -21,12 +21,12 @@
 ---
 ### 2. Создать БД lib
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 002](https://user-images.githubusercontent.com/87654857/147637232-c7a80b6c-6369-45a4-bf34-f420dc7b5047.png)
-
+---
 
 ### 3. Применить к ней скрипты из папки db (либо создать объекты и вставить данные в таблицы руками). Скрипты выполнять в порядке указанном в имени файла.
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 003](https://user-images.githubusercontent.com/87654857/147637250-e2038a53-13cd-4602-8dff-c367d9d53a03.png)
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 004](https://user-images.githubusercontent.com/87654857/147637258-3fa39e0b-7b75-433b-b264-4575becc5041.png)
-
+---
 
 3.1 Восстановить данные из файла data.sql
 
@@ -38,22 +38,20 @@
 ### 4. Установить nodejs версии 14.
 ### 5. Перейти в папку lab2 и выполнить в ней команду npm install.
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 007](https://user-images.githubusercontent.com/87654857/147637317-3d6be078-0b50-4e4c-8c34-a3f1aca6cc47.png)
-
+---
 
 ### 6. Запустить сайт через Visual Studio Code или через команду npm start.
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 008](https://user-images.githubusercontent.com/87654857/147637335-5c248fd8-db7c-46ca-a103-00ba88681a64.png)
-
+---
 
 ### 7. Войти на сайт и увидеть список книг и авторов
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 009](https://user-images.githubusercontent.com/87654857/147637349-0a67ef45-0b27-4089-b0d5-0759d5521a66.png)
-
-
+---
 ### 8. Обнаружить sql инъекцию
-
 Введем конструкцию, которая заведомо вызовет ошибку. Например, символ «b». Получаем следующую ошибку:
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 010](https://user-images.githubusercontent.com/87654857/147637375-ed83b928-f38f-43f6-9d9a-d8c03470ecca.png)
 
-
+---
 ### 9. Написать отчёт с описанием найденной уязвимости и примерами её эксплуатации
 
 9.1. Обход установленного фильтра 
@@ -92,7 +90,7 @@ UNION SELECT 0, column\_name, data\_type FROM information\_schema.columns WHERE 
 
 UNION SELECT 0, name, pass FROM public.users – 
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 015](https://user-images.githubusercontent.com/87654857/147637486-59c938f1-4fcc-43e7-830a-e76cc86d363c.png)
-
+---
 
 ### 10. Исправить уязвимость. 10.1 В отчёте привести пример того, что уязвимости больше не эксплуатируются
 
