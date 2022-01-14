@@ -87,8 +87,6 @@
 
 8.3 Потенциальную уязвимость через Cookie Injection
 
-***<img src=1 onerror=‘javascript:alert(document.cookie)’/>***
-
 Добавляем в cookie:
 
 ![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 008](https://user-images.githubusercontent.com/87654857/147643520-f6e3dac6-dda7-484c-a7ef-04d8f79063ff.png)
