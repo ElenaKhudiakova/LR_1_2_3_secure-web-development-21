@@ -113,3 +113,24 @@
 
 ![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 012](https://user-images.githubusercontent.com/87654857/147643711-3a52dee2-bb37-4ac1-87d3-20a24ebaf2c6.png)
 
+
+Полезные ссылки:
+
+
+https://owasp.org/www-community/Types_of_Cross-Site_Scripting
+
+https://www.ptsecurity.com/ww-en/analytics/knowledge-base/what-is-a-cross-site-scripting-xss-attack/
+
+https://habr.com/ru/post/511318/
+
+https://pugjs.org/api/getting-started.html
+
+https://pugjs.org/language/code.html
+
+https://developer.mozilla.org/ru/docs/Web/HTTP/Cookies
+
+https://developer.mozilla.org/en-US/docs/Web/Security/Types_of_attacks#session_hijacking
+
+https://owasp.org/www-community/attacks/Session_hijacking_attack
+
+https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
