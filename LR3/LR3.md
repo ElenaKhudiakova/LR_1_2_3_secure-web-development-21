@@ -43,9 +43,10 @@
 8.1 Reflected XSS в поиске книг
 
 
-***img src=1 href=1 onerror='javascript:alert(000)'***
+***img src=1 href=1 onerror='javascript:alert(1)'***
 
-![алерт](https://user-images.githubusercontent.com/87654857/149492528-55c962e5-f31a-4707-8609-1de71fb7b7b9.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 002](https://user-images.githubusercontent.com/87654857/149493228-bbad7c91-0ee5-4568-896a-5eed2e886ca7.png)
+
 
 
 Исправление уязвимости:
@@ -61,11 +62,11 @@
 ---
 8.2 Persisted (Stored) XSS при создании книги и отображении списка книг
 
-***<html onclick=“alert(000)”>test</html>***
+***<html onclick=“alert(1)”>test</html>***
 
 Теперь при любом клике на сайте будет выскакивать окно:
 
-![алерт](https://user-images.githubusercontent.com/87654857/149492566-fc3dee07-6040-4871-8caa-047e41a11009.png)
+![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 002](https://user-images.githubusercontent.com/87654857/149493211-75ee8caf-48a1-4494-a33f-74ae24f58933.png)
 
 
 Команда в исходном коде:
