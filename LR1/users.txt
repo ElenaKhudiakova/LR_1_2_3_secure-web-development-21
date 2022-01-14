@@ -1,2 +1,2 @@
-admin;12345
+admin;Passwd123
 student;2
