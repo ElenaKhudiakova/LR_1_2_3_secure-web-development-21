@@ -108,7 +108,7 @@
 
 Для уязвимостей Cookie установим флаг http-only, который запрещает любой доступ к куки из JavaScript, а также изменим значение, выводимое браузером в Value с помощью алгоритма хеширования Sha256:
 
-![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 011](https://user-images.githubusercontent.com/87654857/147643709-627327a1-9aa0-4684-9227-8f1da2288ade.png)
+![ddrFt4eSQIs](https://user-images.githubusercontent.com/87654857/149473425-084be45c-ce3b-4659-9ef7-acd39bf7f1de.jpg)
 
 ![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 012](https://user-images.githubusercontent.com/87654857/147643711-3a52dee2-bb37-4ac1-87d3-20a24ebaf2c6.png)
 
