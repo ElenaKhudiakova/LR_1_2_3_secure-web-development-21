@@ -14,7 +14,7 @@ const client = new Client({ //Вставьте свои параметры БД
     user: 'postgres',
     host: 'localhost', 
     database: 'lib',
-    password: '12345',
+    password: 'Passwd123',
     port: 5432,
 });
 client.connect();
