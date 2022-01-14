@@ -41,7 +41,7 @@
 
 8.1 Reflected XSS в поиске книг
 
-*<img src=1 href=1 onerror='javascript:alert(1)'>*
+***<img src=1 href=1 onerror='javascript:alert(1)'>***
 
 
 ![Aspose Words 9caaed46-bbb4-4406-80f1-5db4046c8311 002](https://user-images.githubusercontent.com/87654857/147643403-9eff70fb-02ed-4911-a3cd-d671d41bc4a4.png)
