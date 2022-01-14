@@ -32,7 +32,6 @@
 ![image](https://user-images.githubusercontent.com/96451409/147102382-d9e7353f-40b4-4a21-8e89-38d414c45bb8.png)
 
 ### 4. Подберите и отдавайте клиенту корректные HTTP коды в случае ошибок  
-***
 
 4.1 Если файл не найден или произошла ошибка при обработке нужно возвращать код из семейства ``500``.  
 
@@ -48,13 +47,13 @@
 ***
 ![image](https://user-images.githubusercontent.com/96451409/147102914-6ad52db3-778f-47ea-b8b4-2445656f581c.png)
 
-![image](https://user-images.githubusercontent.com/96451409/147102931-cd574443-143e-46eb-b3d5-7825ade121ee.png)
+
 
 4.4 Если всё хорошо, то код ``200``.
 ***
 
 ![image](https://user-images.githubusercontent.com/96451409/147102986-5abbfc5a-3dad-4bde-b6ad-8714e35d5dc9.png)
-
+![image](https://user-images.githubusercontent.com/96451409/147102931-cd574443-143e-46eb-b3d5-7825ade121ee.png)
 ### 5. Запустите доработанный сервер ``node .\server_org.js`` и, пройдя по ссылке, ``http://127.0.0.1:8080/login.html`` убедитесь, что всё работает корректно: имена и пользователи хранятся во внешнем файле.
 ***
 
