@@ -57,7 +57,10 @@
 ### 5. Запустите доработанный сервер ``node .\server_org.js`` и, пройдя по ссылке, ``http://127.0.0.1:8080/login.html`` убедитесь, что всё работает корректно: имена и пользователи хранятся во внешнем файле.
 ***
 
-![image](https://user-images.githubusercontent.com/96451409/147103140-0d378976-2dc2-4ec6-b944-d99da7ea1520.png)
+![147103140-0d378976-2dc2-4ec6-b944-d99da7ea1520](https://user-images.githubusercontent.com/87654857/149475412-89ba6db0-8a97-4e40-874a-103bdfbdc346.png)
+
+
+Далее получаем успешный результат:
 
 ![image](https://user-images.githubusercontent.com/96451409/147103216-2e929185-6267-4b84-829e-d0e6d0696019.png)
 
