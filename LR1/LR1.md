@@ -27,7 +27,7 @@
 
 2) ![image](https://user-images.githubusercontent.com/96451409/147102340-746cca7a-5ff1-44ac-af7a-cfff3b3b7ed1.png)
 
-3) Разделяем строку на имя пользователя и пароль через символ точки с запятой
+3) Разделяем строку на имя пользователя и пароль 
 
 ![image](https://user-images.githubusercontent.com/96451409/147102382-d9e7353f-40b4-4a21-8e89-38d414c45bb8.png)
 
