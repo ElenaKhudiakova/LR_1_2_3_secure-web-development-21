@@ -95,8 +95,10 @@ UNION SELECT 0, column\_name, data\_type FROM information\_schema.columns WHERE 
 Чтобы найти пароль, используем запрос:
 
 UNION SELECT 0, name, pass FROM public.users –
- 
-![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 015](https://user-images.githubusercontent.com/87654857/147637486-59c938f1-4fcc-43e7-830a-e76cc86d363c.png)
+
+ ![456](https://user-images.githubusercontent.com/87654857/149490646-efaa9a35-0df2-43e3-8c1c-038402cd08fb.jpg)
+
+
 ---
 
 
