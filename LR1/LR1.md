@@ -27,6 +27,8 @@ users.split(/\n/).forEach((line) => {
     let p = pair[1];
     console.log(` user: '${u}' with password '${p}'`);			
 });
+![image](https://user-images.githubusercontent.com/87654857/149487693-5690b517-73dd-4b0b-be55-6bcfc1dccaab.png)
+
 
 ### 3. Замените примитивную проверку имени и пароля в строке 18 на проверку при помощи данных из пункта 2. 
 
