@@ -16,17 +16,6 @@
 
 Для простоты воспользуемся синхронной версией чтения файлов, пример чтения файла:
 
-//прочитаем с диска файл с пользователями 
-let users = fs.readFileSync('./users.txt', 'utf8');
-console.log(users);
-//разделим его на стркои через символ переноса и пробежим по строкам
-users.split(/\n/).forEach((line) => {
-    // каждая строка это пара имя;пароль. Разберем её на части
-    let pair = line.split(';');
-    let u = pair[0];
-    let p = pair[1];
-    console.log(` user: '${u}' with password '${p}'`);			
-});
 ![image](https://user-images.githubusercontent.com/87654857/149487693-5690b517-73dd-4b0b-be55-6bcfc1dccaab.png)
 
 
