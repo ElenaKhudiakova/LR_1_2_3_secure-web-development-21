@@ -105,11 +105,13 @@ UNION SELECT 0, name, pass FROM public.users –
 ### 10. Исправить уязвимость. 10.1 В отчёте привести пример того, что уязвимости больше не эксплуатируются
 
 Добавим корректную валидацию для вводимых данных:
+
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 016](https://user-images.githubusercontent.com/87654857/147637492-93c1efe4-a86c-450f-b720-4bc7e041fded.png)
 
 
 
 Теперь при попытке эксплуатации SQL Injection наблюдаем следующую ошибку:
+
 ![Aspose Words 89a7bdb0-d0e2-4305-a48a-63cdff6a1364 017](https://user-images.githubusercontent.com/87654857/147637499-073911bd-29ac-4ef5-b1a2-3ef45f941872.png)
 
 
