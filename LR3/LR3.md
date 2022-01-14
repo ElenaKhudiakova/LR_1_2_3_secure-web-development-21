@@ -41,6 +41,7 @@
 
 8.1 Reflected XSS в поиске книг
 
+
 ***<img src=1 href=1 onerror='javascript:alert(1)'>***
 
 
